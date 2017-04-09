@@ -1,5 +1,28 @@
-﻿<main>
-  <h1>Hello from Angular App with Webpack</h1>
+﻿<md-toolbar class="md-primary">
+  <span>First Row</span>
 
-  <img src="../assets/images/angular.png">
-</main>
+  <md-toolbar-row>
+    <span>Second Row</span>
+  </md-toolbar-row>
+
+  <md-toolbar-row>
+    <span>Third Row</span>
+  </md-toolbar-row>
+</md-toolbar>
+<md-sidenav-container class="">
+  <md-sidenav #sidenav mode="side" opened="true" class="md-sidenav-left">
+    <button md-mini-fab class="example-fab" (click)="sidenav.toggle()">
+      <md-icon>add</md-icon>
+    </button>
+    <div class="example-scrolling-content">
+      Side navigation
+    </div>
+  </md-sidenav>
+  <button md-mini-fab class="example-fab" (click)="sidenav.toggle()">
+    <md-icon>add</md-icon>
+  </button>
+  <div class="example-scrolling-content">
+    <h1>Hello from Angular App with Webpack</h1>
+    <img src="../assets/images/angular.png">
+  </div>
+</md-sidenav-container>
